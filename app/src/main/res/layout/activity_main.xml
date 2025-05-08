@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    android:background="#FFF6FB"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨ KoGo To-Do List"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/title_bg"
+        android:padding="16dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="12dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Better Add Task Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"/>
+</LinearLayout>
